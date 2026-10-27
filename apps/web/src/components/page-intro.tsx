@@ -1,0 +1,1 @@
+export function PageIntro({title,description}:{title:string;description?:string}){return <section className="page-intro"><span className="eyebrow">VELVET ROLL CO. · GLASGOW</span><h1>{title}</h1>{description&&<p>{description}</p>}</section>}

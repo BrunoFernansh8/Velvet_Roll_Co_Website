@@ -1,0 +1,2 @@
+import { Link } from 'react-router';
+export function CelebrationCta(){return <section className="celebration-cta"><span className="eyebrow">LET’S MAKE IT UNFORGETTABLE</span><h2>Planning Something <em>Special?</em></h2><p>Tell us about your event and we’ll help you find<br className="desktop"/> the perfect Velvet Roll experience.</p><div className="actions"><Link className="button gold" to="/quote">Get My Quote</Link><Link className="button outline" to="/find-my-package">Find My Package</Link></div></section>}

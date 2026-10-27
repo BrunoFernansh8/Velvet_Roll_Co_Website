@@ -1,0 +1,2 @@
+import { ImagePlus } from 'lucide-react';
+export function PhotoPlaceholder({label,className='',src=''}:{label:string;className?:string;src?:string}){return <div className={`photo-placeholder ${className}`} role="img" aria-label={src?label:`Photo space: ${label}`}>{src?<img src={src} alt={label} loading="lazy"/>:<><div className="photo-mark">V<span>R</span></div><div className="photo-label"><ImagePlus size={16}/><span>{label}</span><small>YOUR PHOTOGRAPH HERE</small></div></>}</div>}

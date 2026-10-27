@@ -1,0 +1,3 @@
+migrate((app) => {
+ let c; try { c = app.findCollectionByNameOrId('event_enquiries'); } catch (_) { c = new Collection({name:'event_enquiries',type:'base',listRule:null,viewRule:null,createRule:'',updateRule:null,deleteRule:null,fields:[{name:'name',type:'text',required:true,max:200},{name:'email',type:'email',required:true},{name:'details',type:'text',required:true,max:15000},{name:'created',type:'autodate',onCreate:true,onUpdate:false},{name:'updated',type:'autodate',onCreate:true,onUpdate:true}]}); app.save(c); }
+}, (app) => { app.delete(app.findCollectionByNameOrId('event_enquiries')); });
